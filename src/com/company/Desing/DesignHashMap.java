@@ -9,7 +9,6 @@ public class DesignHashMap {
     int[] arr;
 
 
-
     public DesignHashMap() {
 
        arr = new int[1000001];

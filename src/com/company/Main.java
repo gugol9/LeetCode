@@ -5,7 +5,9 @@ import com.company.Code.AmstrongNumber;
 import com.company.Code.FibIteracynie;
 import com.company.Code.NTyWrazFib;
 import com.company.Code.ReverseString;
+import com.company.Desing.EncodeAndDecodeTinyURL;
 import com.company.Desing.MyHashSet;
+import com.company.Desing.UndergroundSystem;
 import com.company.Easy.ConvertTheTemperature;
 import com.company.Easy.NumberOfGoodPairs;
 import com.company.Math.*;
@@ -176,6 +178,27 @@ public class Main {
         System.out.println(lists);
 
         System.out.println("dd");
+
+        System.out.println(Arrays.toString(ReplaceElementsWithGreatestElementOnRightSide.replaceElements(new int[]{17, 18, 5, 4, 6, 1})));
+
+        UndergroundSystem undergroundSystem = new UndergroundSystem();
+        undergroundSystem.checkIn(1,"RZE",50);
+        undergroundSystem.checkIn(2,"RZE",50);
+
+        undergroundSystem.checkOut(1,"KR",100);
+        undergroundSystem.checkOut(2,"KR",400);
+
+        double param3 = undergroundSystem.getAverageTime("RZE", "KR");
+        System.out.println(param3);
+
+
+        System.out.println(undergroundSystem);
+
+        EncodeAndDecodeTinyURL encodeAndDecodeTinyURL = new EncodeAndDecodeTinyURL();
+
+
+        System.out.println(encodeAndDecodeTinyURL.encode("https://leetcode.com/problems/design-tinyurl"));
+        System.out.println(encodeAndDecodeTinyURL.decode("1"));
 
     }
 }
